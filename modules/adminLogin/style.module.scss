@@ -1,0 +1,102 @@
+.login {
+    &__main {
+        position: relative;
+        background-color: #E4E4E4;
+        min-height: 100vh;
+        width: 100%;
+        padding: 5% 0;
+        background-image: url('https://res.cloudinary.com/abyy30/image/upload/v1608388133/organiserBanner_e35yii.jpg');
+        background-size: cover;
+        @media (max-width: 768px) {
+            background-color: #ffffff;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-size: 160%;
+        }
+    }
+    &__OrgTitle {
+        font-size: 56px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #ffffff;
+        padding: 25% 0 0;
+        @media (min-width: 768px) {
+            padding: 0;
+        }
+    }
+    &__OrgSubTitle {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+        @media (min-width: 768px) {
+            margin-bottom: 5%;
+        }
+    }
+    &__inner {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        padding: 60px 16px;
+        color: #333333;
+        background-color: #ffffff;
+        @media (min-width: 769px) {
+            position: relative;
+            max-width: 464px;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #000000;
+    }
+    &__subTitle {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 32px;
+        color: #666666;
+    }
+    &__inputLabel {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    &__input {
+        margin-bottom: 40px;
+        input {
+            padding: 15px 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+    &__input {
+        margin-bottom: 40px;
+    }
+    &__inputError, &__inputInfo {
+        margin-top: 5px;
+        color: #333333;
+        font-size: 12px;
+    }
+}
+.Btn {
+    > button {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 4px;
+        color: #ffffff;
+        background-color: #3E6EEA;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        &:disabled {
+            background-color: #C0C0C0;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.chatListing {
+    background: #E4E4E4;
+    min-height: 100vh;
+    &__main {
+        max-width: 400px;
+        margin: 0 auto;
+        background: #ffffff;
+        min-height: 100vh;
+    }
+    &__inner {
+        padding: 16px;
+    }
+
+}

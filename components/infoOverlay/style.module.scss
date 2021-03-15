@@ -1,0 +1,78 @@
+
+.inforOverlay {
+    position: fixed;
+    display: block;
+    text-align: center;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 3;
+    @media (min-width: 769px) {
+        display: none;
+    }
+    &.hideInforOverlay {
+        display: none;
+    }
+    &__imageTop {
+        position: relative;
+        > img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    &__floatingInfo {
+        position: absolute;
+        bottom: 50px;
+        left: 0px;
+        right: 0px;
+        text-align: left;
+        padding: 0 16px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 0 0 10px;
+    }
+    &__subTitle {
+        position: relative;
+        font-size: 14px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__separator {
+        background-color: #000000;
+        width: 25%;
+        height: 2px;
+        margin: 0px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+    }
+    &__desc {
+        font-size: 14px;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    &__reasonListWrap {
+        padding: 0px 16px 20px;
+    }
+    &__reasonList {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        list-style-image: url('https://res.cloudinary.com/abyy30/image/upload/v1608320518/Tick-circle_r3tqlo.png');
+        padding: 0 25px 0;
+        li {
+            margin-bottom: 20px;
+            text-align: left;
+            line-height: 20px;
+            &::marker {
+                margin-top: -3px;
+            }
+        }
+    }
+}

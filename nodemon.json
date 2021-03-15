@@ -1,0 +1,6 @@
+{
+    "watch": ["server.js", "server/**/*.js", "shared/**/*.js","pages/**/*.js","components/**/*.js","**/*.js"],
+    "ignore": [".next"],
+    "ext": "js",
+    "exec": "npm run build && node server.js"
+  }
